@@ -1,7 +1,7 @@
 // Write your solution in this file!
 const employee = {}
 
-function updateEmployeeWithKeyAndValue(employee, key, value) {
+const updateEmployeeWithKeyAndValue = (employee, key, value) => {
     const newEmployee = {...employee}
 
     newEmployee[key] = value;
@@ -27,7 +27,7 @@ function deleteFromEmployeeByKey(employee, key) {
 
 function destructivelyDeleteFromEmployeeByKey(employee, key) {
     employee[key] = "";
-
+    
     delete employee[key]
     
     return employee;
